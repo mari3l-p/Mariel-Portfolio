@@ -5,6 +5,7 @@
   --white: #F0F0F0;
   --gray: #808080;
   --dark-blue: #171924;
+  --soft-blue: #262A33;
   --pink: #ff00e5;
 }
 
@@ -59,4 +60,19 @@ body {
 
 .gradient {
   background: linear-gradient(135deg, rgba(6, 182, 212, 1) 0%, rgba(255, 0, 229, 1) 100%);
+}
+
+
+.techStack svg {
+  display: inline;
+}
+
+.techStack span {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 5px 0 5px 0;
+}
+
+.techStack span:first-of-type {
+  margin-top: 35px;
 }
