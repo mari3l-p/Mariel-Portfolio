@@ -1,19 +1,20 @@
-import "./globals.css";
+import About from "./components/home components/About"
+import Hero from "./components/home components/Hero"
+
 
 export default function Home() {
   return (
     <>
       <div id="container" 
-          className="rounded-lg flex-1 h-full overflow-y-auto
+          className="my-11 md:m-11 rounded-lg flex-1 h-full overflow-y-auto
           grid grid-cols-1 md:grid-cols-[4fr_1.5fr] [grid-template-areas:var(--grid-mobile)] md:[grid-template-areas:var(--grid-dashboard)]">
           
-
-          <div className="bg-pink-500 [grid-area:hero] rounded-lg"></div>
-          <div className="bg-indigo-500 [grid-area:about] rounded-lg" ></div>
-          <div className="bg-red-500 [grid-area:projects] rounded-lg" ></div>
-          <div className="bg-orange-500 [grid-area:stack] rounded-lg" ></div>
-          <div className="bg-cyan-500 [grid-area:certification] rounded-lg" ></div>
-          <div className="bg-gray-500 [grid-area:logos] rounded-lg" ></div>
+          <Hero/>
+          <About/>
+          <div className="h-50 bg-red-500 [grid-area:projects] rounded-lg" ></div>
+          <div className="h-150 bg-orange-500 [grid-area:stack] rounded-lg" ></div>
+          <div className=" h-50 bg-cyan-500 [grid-area:certification] rounded-lg" ></div>
+          <div className=" h-50 bg-gray-500 [grid-area:logos] rounded-lg" ></div>
         </div>
       
     </>
