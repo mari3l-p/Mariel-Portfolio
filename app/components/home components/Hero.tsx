@@ -10,7 +10,7 @@ const Hero = () => {
         <div>
             <h1 className='text-4xl lg:text-7xl font-bold'>Mariel Palacio</h1>
             <Typewriter/>
-            <a href="" download="" 
+            <a href="/cv-mariel.pdf" download="/cv-mariel.pdf" 
                 className='rounded-xl gradient inline-flex items-center gap-2 py-2 px-4 shadow-lg shadow-pink-500/20
                   transition-all duration-300 ease-in-out 
                   hover:scale-105 
