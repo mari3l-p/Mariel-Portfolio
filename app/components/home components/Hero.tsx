@@ -6,7 +6,7 @@ import Typewriter from './Typewriter'
 const Hero = () => {
 
   return (
-    <div className="flex flex-col items-center md:flex-row justify-between [grid-area:hero]">
+    <div className="mt-10 md:mt-15 flex flex-col items-center md:flex-row justify-between [grid-area:hero]">
         <div>
             <h1 className='text-4xl lg:text-7xl font-bold'>Mariel Palacio</h1>
             <Typewriter/>

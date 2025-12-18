@@ -5,15 +5,18 @@
   --white: #F0F0F0;
   --gray: #808080;
   --dark-blue: #171924;
+  --dark-blue-75: #171924a0;
   --soft-blue: #262A33;
   --pink: #ff00e5;
+  --blue: #7ec7d3;
+  --light-blue: rgb(95, 164, 211);
 }
 
 body {
   min-height: 100vh;
   min-width: 100%;
-  background: #06B6D4;
-  background: linear-gradient(135deg, rgba(6, 182, 212, 1) 0%, rgba(255, 0, 229, 1) 100%);
+  background: rgb(6, 130, 212);
+  background: linear-gradient(135deg, rgb(6, 130, 212) 0%, rgba(255, 0, 229, 1) 100%);
 }
 
 
@@ -40,7 +43,7 @@ body {
 #container {
   display: grid;
   grid-auto-rows: auto;
-  gap: 65px;
+  gap: 80px;
 }
 
 .lucide {
@@ -68,11 +71,51 @@ body {
 }
 
 .techStack span {
-  font-size: 24px;
   font-weight: 400;
-  margin: 5px 0 5px 0;
+  margin: 5px 0;
 }
 
 .techStack span:first-of-type {
   margin-top: 35px;
+}
+
+
+.carousel {
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 350px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel .group {
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  animation: move 10s infinite linear;
+  padding-right: 3em;
+}
+
+.card {
+  flex: 0 0 5em;
+}
+
+.card:hover {
+  transform: translateY(-8%);
+}
+
+#contact-form input, textarea {
+  border: 2px solid var(--gray);
+  margin: 10px 0;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+@keyframes move {
+  from {translate: 0;}
+  to {translate: -100%;}
 }

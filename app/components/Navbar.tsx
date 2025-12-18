@@ -24,7 +24,7 @@ export default function Navbar() {
     return(
         <>
             <header className="md:hidden flex">
-                {!open && <div className="bg-(--dark-) text-(--white) p-2 rounded-lg fixed"><button className="m-0 p-0" onClick={() => setOpen(true)} ><Menu className="text-center m-0"/></button></div>}
+                {!open && <div className="z-50 bg-(--dark-) text-(--white) p-2 rounded-lg fixed top-6 left-6 "><button className="m-0 p-0" onClick={() => setOpen(true)} ><Menu className="text-center m-0"/></button></div>}
 
                 {open && 
                     // Fullscreen fixed overlay so background can't be scrolled or interacted with

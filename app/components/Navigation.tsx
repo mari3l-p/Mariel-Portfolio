@@ -24,14 +24,14 @@ export default function Navigation() {
                     <div 
                         onClick={() => setIsOpen(!isOpen)}
                         className="cursor-pointer">
-                        <FileCode /> Projects {isOpen ? <ChevronUp/>: <ChevronDown/>}
+                        <FileCode /> Proyectos {isOpen ? <ChevronUp/>: <ChevronDown/>}
                     </div>
                     {isOpen && 
                         <div className="flex flex-col gap-5 pl-12 mt-5">
                             <li className={usePathName === '/freeCodeCamp' ? "hover-link" : "just-link"}><Link href="/freeCodeCamp">FreeCodeCamp</Link></li>
                             <li className={usePathName === '/daysJs' ? "hover-link" : "just-link"}><Link href="/daysJs">30 Days of JS</Link></li>
                             <li className={usePathName === '/react' ? "hover-link" : "just-link"}><Link href="/react">React</Link></li>
-                            <li className={usePathName === '/instagramAnalizer' ? "hover-link" : "just-link"}><Link href="/instagramAnalizer">Instagram Analizer</Link></li>
+                            <li className={usePathName === '/instagramAnalizer' ? "hover-link" : "just-link"}><Link target="_blank" href="https://analyze-data.vercel.app">Instagram Analizer</Link></li>
                         </div>
                     }
                 </div>

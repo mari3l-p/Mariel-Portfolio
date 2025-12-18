@@ -1,0 +1,56 @@
+body {
+    color: #F0F0F0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    padding: 2rem;
+    background: #408DAD;
+    background: linear-gradient(135deg, rgba(64, 141, 173, 1) 0%, rgba(10, 11, 15, 1) 50%, rgba(187, 45, 151, 1) 100%);
+}
+
+main {
+    background-color: #0A0B0F; 
+    padding: 45px;
+    border-radius: 25px;
+}
+
+/* header */
+h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.5rem; 
+    color: #808080;
+}
+
+a {color: #408DAD;}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 45px 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    height: fit-content;
+    background-color: #171924;
+    color: #F0F0F0;
+    /* box-shadow: 0px 5px 5px 0px rgb(255, 255, 255, 0.25); */
+    border: 1px solid rgb(61, 66, 88);
+}
+
+.card img {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    object-fit: cover;
+}
