@@ -32,8 +32,6 @@ const DaysJs = () => {
     {link: "my30js/28 - Video Speed Controller/index.html", img: "/my30js/img/28.jpg", title: "Video Speed", text: "Control the video speed with the bar."},
     {link: "my30js/29 - Countdown Timer/index.html", img: "/my30js/img/29.jpg", title: "Countdown Timer", text: "Countdown Timer for breaks."},
     {link: "my30js/30 - Whack A Mole/index.html", img: "/my30js/img/30.jpg", title: "Whack A Mole", text: "Play this fun game. Whack A Mole!!!."},
-
-
   ]
 
   return (
